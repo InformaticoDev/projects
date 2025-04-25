@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição Online - Instituto Médio Técnico Luiza Andaluz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .form-section {
+            background: whitesmoke;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 90%;
+            margin: 0 5% auto;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            & h3{
+                font-size: 2rem;
+            }
+        }
+        
+        h2 {
+            color: #2c3e50;
+            border-bottom: 2px solid #473ce7;
+            padding-bottom: 5px;
+            font-size: 2.5rem;
+            width: 90%;
+            margin: 0 5% auto;
+            text-align: center;
+        }
+        
+        label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+        
+        input[type="text"],
+        input[type="date"],
+        input[type="email"],
+        input[type="tel"],
+        select,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        .file-upload {
+            background: #ecf0f1;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 10px 0;
+        }
+        
+        button {
+            background: #0c0479;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            font-size: 2rem;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 80%;
+            margin: 0 10% auto;
+        }
+        
+        button:hover {
+            background: #1f05af;
+        }
+        
+        .in{
+            font-size: 3.5rem;
+            border-bottom: none;
+            color: white;
+        }
+
+        @media (max-width: 600px) {
+            
+            .form-section {
+                padding: 15px;
+            }
+
+        }
+
+        .D{
+            display: flex;
+            flex-direction: column;
+        }
+
+    </style>
+</head>
+<body style="background-image: url(img/Lt.JPG);background-repeat: no-repeat;background-attachment: fixed;background-size:cover;">
+
+    <header>
+        <nav>
+          <a class="logo" href="index.html">
+            <img src="img/logo.png" alt=""><h1 id="h">Instituto Médio Técnico Luiza Andaluz</h1>
+            <h1 id="h1">IMTLA</h1>
+          </a>
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="#contactos.html">Contactos</a></li>
+            <li><a href="login.html">Inscreva-se</a></li>
+            <li></li>
+          </ul>
+        </nav>
+      </header>
+      <br><br><br><br><br><br><br><br><br><br>
+      <div class="D">
+      <div class="I">
+        <h2 class="in">Requisitos Para inscrição online</h2> 
+      <div class="form-section">
+        <h2>Certificate que tenhas todos os requisitos!</h2>
+        <br><br><br>
+        <h3>1) BI (Bilhete de identidade) não vencido</h3>
+        <h3>2) 1000kz valor da inscrição</h3>
+        <h3>3) E-mail válido</h3>
+        <br><br><br>
+        <h3>Conta BFA - 143800708/30</h3>
+        <h3>IBAN - 0006 0000 4380 0708 3011 8</h3>
+    </div>
+    <br><br><br>
+    <div class="D">
+        <div class="I">
+          <h2 class="in">Requisitos Para Matricula online</h2> 
+        <div class="form-section">
+          <h2>Certificate que tenhas todos os requisitos!</h2>
+          <br><br><br>
+          <h3>1) Certificado original da 9ª classe</h3>
+          <h3>2) ????????????????</h3>
+          <h3>3) ????????????????</h3>
+          <br><br><br>
+          <h3>Conta BFA - 143800708/30</h3>
+          <h3>IBAN - 0006 0000 4380 0708 3011 8</h3>
+      </div>
+</div><br><br><br><br><br>
+      <section class="servicos reveal" style="background-color: white;">
+        <h3 class="head-text1" id="sobre.html">Inscrição online 2026-2027</h3><br>
+      <h3 class="head-text2">Faça já a tua inscrição aqui mesmo!</h3>
+      <h3 class="head-textbt"><a href="Login.html">Inscreva-se Já</a></h3>
+      </section>
+
+
+
+     <br><br><br><br><br>
+    <div class="V">
+      <h2 class="in">Inscrição Online 2026-2027</h2>
+    <br>
+    <form action="">
+    <div class="form-section">
+        <h2>Dados Pessoais</h2>
+        
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required>
+                
+        <label for="data_nasc">Data de Nascimento:</label>
+        <input type="date" id="data_nasc" name="data_nasc" required>
+        
+        <label for="genero">Gênero:</label>
+        <select id="genero" name="genero" required>
+            <option value="">Selecione o gênero..</option>
+            <option value="M">Masculino</option>
+            <option value="F">Feminino</option>
+        </select>
+        <br>
+        <label for="curso">Curso:</label>
+        <select id="curso" name="curso" required>
+            <option value="">Selecione o curso...</option>
+            <option value="I">Informática</option>
+            <option value="E">Energia e Isntalações Electricas</option>
+        </select>
+        <br>
+        <label for="genero">Scan do BI(Bilhete de identidade) Frente e verso</label>
+        <div class="file-upload">
+            <input type="file" id="bi_scan" name="bi_scan" accept=".pdf,.jpg,.png,.jpeg" required>
+  
+        <br><br><br><br>
+        <h2>Contactos</h2>
+        <label for="nome">Nome de contacto:</label>
+        <input type="text" id="nome" name="nome" required>
+        
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" pattern="[0-9]{9}" title="9 dígitos" placeholder="+244" required>
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" required>
+    <br><br><br>
+        <h2>Comprovativo de pagamento</h2>
+        
+        <div class="file-upload">
+            <input type="file" id="bi_scan" name="bi_scan" accept=".pdf,.jpg,.png,.jpeg" required>
+        </div>
+    </div><br><br><br>
+    <div class="form-section">
+        <h2>Confirmação</h2>
+        
+        <input type="checkbox" id="termos" name="termos" required>
+        <label for="termos" style="display: inline;font-size: 2rem;">Declaro que as informações são verdadeiras e aceito trazer os documentos originais no dia do teste.</label>
+        <br><br>
+        <p style="font-size: 2rem;"><strong>Nota:</strong> Aquarde pela confirmação em 24h úteis. Se não ser notificado! entre em contacto!</p>
+    </div><br><br><br>
+    <button type="submit">Submeter Inscrição</button>
+    </form>
+</div>
+</div>
+    
+    <!-- footer -->
+    <section class="footer reveal">
+        <div class="box-container">
+            
+            <div class="box">
+                <h3>Nossos Links</h3>
+                <a href="index.html">Inicio</a>
+                <a href="cursos.html">Cursos</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="#contactos.html">Contactos</a>
+                <a href="login.html">Iniciar Inscrição</a>
+            </div>
+            <div class="box">
+              <h3>Localização</h3>
+              <a href="">Angola</a>
+              <a href="">Rua da frescura</a>
+              <a href="https://maps.app.goo.gl/T8BAWQecgsUzjRa18"><iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d357.89547115757813!2d13.210422884029054!3d-8.864365643908503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x1a51f51c461c6c95%3A0x68239f8574b6acae!2s46P6%2BH7C%20Instituto%20m%C3%A9dio%20t%C3%A9cnico%20Luiza%20Andaluz%2C%20Luanda!3m2!1d-8.864408899999999!2d13.2107032!5e1!3m2!1sen!2sao!4v1745408724902!5m2!1sen!2sao" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></a>
+          </div>
+            <div class="box">
+                <h3>Nossos Conactos</h3>
+                <a href="">+244 912 345 678</a>
+                <a href="">+244 987 654 321</a>
+                <a href="">IMTLA@gmail.com</a>
+            </div>
+            <div class="box">
+                <h3>Redes Socias</h3>
+                <a href="">Facebook</a>
+                <a href="">Youtube</a>
+            </div>
+            
+        </div>
+    
+        <div class="credit">&copy Todos direitos reservados 2025 criado por <span>IMTLA</span></div>
+    </section>
+
+    <script src="js/mobile-navbar.js"></script>
+    <script src="js/script.js"></script>
+
+    <script>
+       
+
+        // Validação de arquivos
+        document.querySelector('form').addEventListener('submit', function(e) {
+            const files = document.querySelectorAll('input[type="file"]');
+            let isValid = true;
+            
+            files.forEach(file => {
+                if(file.files[0] && file.files[0].size > 6 * 1024 * 1024) {
+                    alert(`O arquivo ${file.name} excede 6MB!`);
+                    isValid = false;
+                }
+            });
+            
+            if(!isValid) e.preventDefault();
+        });
+    </script>
+</body>
+</html>

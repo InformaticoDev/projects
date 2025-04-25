@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-AO">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Instituto Médio Luiza Andaluz</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+
+/* Default body */
+body { 
+  margin: 0; 
+  opacity: 0;
+  font: 1.6rem/1.875 'Avenir Next', sans-serif;
+}
+
+/* Loaded body */
+body.loaded {
+  opacity: 1;
+  transition: 1s opacity;
+}
+
+/* Default banner */
+.banner {
+  position: relative;
+  width: 100%;
+  height: 40rem;
+  padding: 0 5%;
+  overflow: hidden;
+  backface-visibility: hidden;
+}
+
+/* Default image container */
+.banner .background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transform: translate3d(0,0,0) scale(1.25);
+  background: black url(img/inf1.JPG) no-repeat center center; 
+  background-size: cover;
+}
+
+/* Loaded image container */
+.loaded .banner .background {
+  transform: scale(1);
+  transition: 6.5s transform;
+}
+
+
+
+
+/* Default image container */
+.banner .background1 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transform: translate3d(0,0,0) scale(1.25);
+  background: black url(img/electricidade.jpg) no-repeat center center; 
+  background-size: cover;
+}
+
+/* Loaded image container */
+.loaded .banner .background1 {
+  transform: scale(1);
+  transition: 6.5s transform;
+}
+/* Other stuff */
+.banner h1 {
+  color: #EEE;
+  margin: 0;
+  line-height: 40rem;
+  text-transform: uppercase;
+  text-shadow: 0 0 .6rem black;
+}
+
+main { 
+  width: 90%;
+  margin: 5rem auto;
+}
+
+main p { margin: 0 0 3rem 0; }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+          <a class="logo" href="index.html">
+            <img src="img/logo.png" alt=""><h1 id="h">Instituto Médio Técnico Luiza Andaluz</h1>
+            <h1 id="h1">IMTLA</h1>
+          </a>
+          <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+          </div>
+          <ul class="nav-list">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="cursos.html">Cursos</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="#contactos.html">Contactos</a></li>
+            <li><a href="login.html">Inscreva-se</a></li>
+            <li></li>
+          </ul>
+        </nav>
+      </header>     
+      <header class="banner reveal">
+        <span class="background1"></span>
+        <h1>Curso de Electricidade</h1>
+      </header>
+      <!-- Other stuff -->
+      <main>
+        <article>
+          <h1>Instituto Médio Técnico Luiza Andaluz</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ut enim lorem. Aenean consectetur magna quam, ac pharetra velit molestie vitae. Donec eros nisi, condimentum in nunc eget, rutrum faucibus orci. Aenean lacinia augue vel blandit ultricies. Quisque aliquet dui egestas consectetur aliquet. Etiam semper interdum sodales. Donec vehicula arcu rutrum nisi malesuada tincidunt convallis vitae magna. Nam in tortor commodo, molestie ligula vitae, volutpat justo.</p>
+          <p>Phasellus velit lectus, sagittis vitae nunc sit amet, elementum convallis nibh. Donec urna purus, faucibus a turpis a, blandit eleifend sem. Vivamus blandit, felis eu sodales cursus, elit mauris iaculis enim, quis volutpat purus massa in sapien. Fusce a enim felis. Aliquam in nulla leo. Aliquam at lacinia lectus. Nunc imperdiet dui in tortor tincidunt rutrum. Etiam porttitor metus convallis, ornare nisl a, interdum nisl. Integer lacinia quis enim nec ultrices. Mauris eget ante magna. Vestibulum volutpat adipiscing lorem et dignissim. Suspendisse sed semper ligula. Donec consequat auctor luctus. Quisque sodales, ipsum id facilisis cursus, lectus purus tincidunt massa, eu mollis odio odio ac dui. Suspendisse potenti.</p>
+          
+        </article>
+      </main>
+      <!-- partial -->
+      <section class="servicos reveal" style="background-color: white;">
+      <h3 class="head-text2">Faça já a sua inscrição aqui mesmo!</h3>
+      <h3 class="head-textbt"><a href="Login.html">Inscreva-se Já</a></h3>
+      </section>
+
+    
+    <!-- footer -->
+    <section class="footer reveal">
+      <div class="box-container">
+          
+          <div class="box">
+              <h3>Nossos Links</h3>
+              <a href="index.html">Inicio</a>
+              <a href="cursos.html">Cursos</a>
+              <a href="sobre.html">Sobre</a>
+              <a href="#contactos.html">Contactos</a>
+              <a href="login.html">Iniciar Inscrição</a>
+          </div>
+          <div class="box">
+            <h3>Localização</h3>
+            <a href="">Angola</a>
+            <a href="">Rua da frescura</a>
+            <a href="https://maps.app.goo.gl/T8BAWQecgsUzjRa18"><iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d357.89547115757813!2d13.210422884029054!3d-8.864365643908503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x1a51f51c461c6c95%3A0x68239f8574b6acae!2s46P6%2BH7C%20Instituto%20m%C3%A9dio%20t%C3%A9cnico%20Luiza%20Andaluz%2C%20Luanda!3m2!1d-8.864408899999999!2d13.2107032!5e1!3m2!1sen!2sao!4v1745408724902!5m2!1sen!2sao" width="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></a>
+        </div>
+          <div class="box">
+              <h3>Nossos Conactos</h3>
+              <a href="">+244 912 345 678</a>
+              <a href="">+244 987 654 321</a>
+              <a href="">IMTLA@gmail.com</a>
+          </div>
+          <div class="box">
+              <h3>Redes Socias</h3>
+              <a href="">Facebook</a>
+              <a href="">Youtube</a>
+          </div>
+          
+      </div>
+  
+      <div class="credit">&copy Todos direitos reservados 2025 criado por <span>IMTLA</span></div>
+  </section>
+  <button id="btnTop" title="Voltar ao topo">↑</button>
+    <script src="js/mobile-navbar.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
